@@ -1,0 +1,299 @@
+/*generalized css classes*/
+body {
+	overflow: scroll;
+}
+.right {
+	margin-left: auto;
+}
+
+.item {
+	margin: 5px 0;
+	display: flex;
+	height: 600px;
+	flex-direction: column;
+}
+i {
+	margin: 0 10px;
+}
+p {
+	margin: 0;
+}
+button {
+	width: 120px;
+	height: 60px;
+	color: white;
+	background: black;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+button:hover {
+	color: black;
+	background: #ffa31a;
+	box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.15);
+	transition: box-shadow 300ms;
+}
+h2 {
+	position: relative;
+	font-size: 30px;
+	z-index: 1;
+	overflow: hidden;
+	text-align: center;
+}
+	h2:before,
+	h2:after {
+		position: absolute;
+		top: 51%;
+		overflow: hidden;
+		width: 50%;
+		height: 1px;
+		content: '\a0';
+		background-color: #cccccc;
+		padding: 1px;
+		margin: 1px;
+	}
+	h2:before {
+		margin-left: -50%;
+		text-align: right;
+	}
+
+/*ends here*/
+body header {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+#head {
+	background: #ffd27f;
+	height: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px 40px 0;
+	color: #F5F5F5;
+}
+
+	#head a {
+		color: #F5F5F5;
+	}
+#item-container {
+	display: flex;
+	flex-direction: column;
+	margin: 0 40px;
+}
+	.list1 {
+		display: flex;
+		padding: 20px 120px;
+		height: 20px
+	} 
+	.list1 .logo {
+		flex-grow: 3; 
+		border-right: none;
+		align-items: center;
+		text-align: left;
+		margin-top: -10px;
+	}
+	.list1 > div {
+		text-align: center;
+		border-right: 1px solid black;
+		padding: 0 5px;
+		flex-grow: 0.12;
+	}		
+	.body1 {
+		display: flex;
+		flex-direction: column;
+	}
+		.body1 img {
+			padding: 0 120px;
+			height: 600px;
+		}
+
+.container2 {
+	padding: 20px 120px;
+}
+
+	.container2 h2 {
+		display: flex;
+		margin: 0;
+		color: #333333;
+		justify-content: center;
+		padding: 0 10px;
+	}
+	#rec-books {
+		display: flex;
+	}
+	#rec-books > div:hover {
+		box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+		cursor: pointer;
+	}
+
+		#rec-books > div {
+			margin: 50px 20px;
+			height: 300px;
+			width: 40px;
+			border: 1px solid #cccccc;
+			flex-grow: 1; 
+			background: url(img1.jpg);
+		    background-repeat: no-repeat;
+			background-position: center;
+			background-size: 140px 170px;
+			position: relative;
+		}
+
+		#rec-books >div > div {
+			position: absolute;
+			bottom: 20px;
+			left: 60px;
+			color: #999999;
+		}
+	#rec-books span {
+		color: red;
+	}	
+
+.container3 .content{
+	margin: 10px 80px;
+	display: flex;
+}	
+	.content > div {
+		flex-grow: 1
+	}
+	.about-book {
+		margin-left: -150px;
+		background: #eee;
+		padding: 0 20px;
+	}
+		.about-book h1 {
+			color: #808080;
+			padding: 30px 0 0;
+		}
+	h3 {
+	  padding-left: 20px;
+	  text-transform: uppercase;
+	}
+
+	.box {
+		position: relative;
+		padding: 30px 10px 5px;
+		min-height: 150px;
+		border-radius: 3px;
+		background: #fff;
+		font-size: 14px;
+		background: #eee;
+	}
+
+	.re-right {
+		border-color: #bd0f18;
+		box-shadow: inset 0 0 10px #555;
+		background: #f2f2f2;
+	}
+
+	.text {
+		outline: none;
+	}
+
+	.edit, .save {
+		width: 30px;
+		display: block;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		padding: 4px 10px;
+		text-align: center;
+		cursor: pointer;
+		box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+	}
+
+	.edit { 
+		background: #557a11;
+		color: #f0f0f0;
+		opacity: 0;
+		transition: opacity .2s ease-in-out;
+	}
+
+	.save {
+		display: none;
+		background: #bd0f18;
+		color: #f0f0f0;
+	}
+
+	.box:hover .edit {
+		opacity: 1;
+	}
+.container2 #view-all {
+	box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+	color: white;
+	background: grey;
+	height: 50px;
+}	
+.container2 #buttoncarrier {
+	display: flex;
+	justify-content: center;
+}
+.container2 #view-all:hover {
+	box-shadow: inset -1px 1px 4px rgba(0,0,0,0.5);
+}		
+.container5 {
+	background: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: row;
+}
+	.container5 > div {
+		background: white;
+		flex-grow: 1;
+		margin: 150px 50px;
+		padding: 40px;
+		justify-content: left;
+	}
+		.container5 button {
+			background: blue;
+			color: white;
+			width: 120px;
+			height: 40px;
+		}
+	.container5 .header {
+		font-size: 30px;
+		color: #808080;
+	}	
+	.container5	.content {
+		width: 100%;
+		height: 120px;
+		margin: 20px 0;
+	}
+.quote img {
+	height: 600px;
+	margin-top: -11px;
+}	
+.last-item {
+	display: flex;
+	background: #eee;
+	flex-direction: row;
+	padding: 60px;
+}
+	.last-item > div {
+		flex-grow: 1;
+		margin: 10px;
+		font-size: 20px;
+		color: black;
+		justify-content: center;
+	}
+	.last-item .firsthalf {
+		display: flex;
+		height: 220px;
+	}
+.footer {
+	height: 50px;
+	margin-top: -10px;
+	background: #262626;
+	display: flex;
+	flex-direction: row;
+}
+	.footer > div {
+		text-align: center;
+		padding: 15px 10px;
+		color: white;
+		flex-grow: 1;
+	}
+		.footer:first-child {
+			justify-content: flex-start;
+			flex-grow: 4;
+		}		
